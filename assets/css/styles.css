@@ -2,3 +2,25 @@
   color: #fc3d21;
 }
 
+.navylink {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  opacity: 0.8;
+  font-family: 'Montserrat';
+}
+
+.logo {
+  letter-spacing: 3px;
+  font-size: 4.5vmin;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  line-height: 30px;
+  margin: -6px;
+  opacity: 0.9;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--bs-dark);
+}
+
