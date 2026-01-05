@@ -6,6 +6,6 @@
     "titleColor": "#e3e3e3",
     "backgroundImage": "assets/photos/stockholm-in-bw/bw9.jpg",
     "clickTarget": "home.html",
-    "clickToProjectSlug": "stockholm-in-color"
+    "clickToProjectSlug": "stockholm-in-bw"
   }
 }
