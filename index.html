@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>marcusisaksson_</title>
+    <link rel="preload" href="settings.json" as="fetch" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      /* Splash specific adjustments */
+      html, body { height: 100%; }
+      body.splash { margin:0; background:#ffffff; }
+      .splash-bg {
+        position: fixed; inset: 0; background-position: center; background-size: cover; background-repeat: no-repeat;
+        filter: saturate(0.9) brightness(0.9);
+      }
+      .splash-grid {
+        position: relative; display: grid; height: 100vh; width: 100vw; grid-template-rows: repeat(3, 1fr); grid-template-columns: repeat(3, 1fr);
+        z-index: 1;
+      }
+      .splash-title { align-self: center; justify-self: center; font-size: clamp(36px, 8vw, 96px); font-weight: 600; letter-spacing: 0.02em; }
+      /* Position title in the 3x3 grid by setting grid cell (row/column) */
+      .pos-top-left { grid-row: 1; grid-column: 1; align-self: start; justify-self: start; margin: 24px; }
+      .pos-top-center { grid-row: 1; grid-column: 2; align-self: start; justify-self: center; margin-top: 24px; }
+      .pos-top-right { grid-row: 1; grid-column: 3; align-self: start; justify-self: end; margin: 24px; }
+      .pos-center-left { grid-row: 2; grid-column: 1; align-self: center; justify-self: start; margin-left: 24px; }
+      .pos-center { grid-row: 2; grid-column: 2; align-self: center; justify-self: center; }
+      .pos-center-right { grid-row: 2; grid-column: 3; align-self: center; justify-self: end; margin-right: 24px; }
+      .pos-bottom-left { grid-row: 3; grid-column: 1; align-self: end; justify-self: start; margin: 24px; }
+      .pos-bottom-center { grid-row: 3; grid-column: 2; align-self: end; justify-self: center; margin-bottom: 24px; }
+      .pos-bottom-right { grid-row: 3; grid-column: 3; align-self: end; justify-self: end; margin: 24px; }
+      .splash-click { position: fixed; inset: 0; z-index: 2; cursor: pointer; }
+    </style>
+  </head>
+  <body class="splash">
+    <div class="splash-bg" id="splashBg" aria-hidden="true"></div>
+    <div class="splash-grid">
+      <div id="splashTitle" class="splash-title">marcusisaksson_</div>
+    </div>
+    <a id="splashClick" class="splash-click" aria-label="Enter"></a>
+    <script src="js/utils.js"></script>
+    <script src="js/landing.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "stockholm-in-bw",
+    "title": "Stockholm in B&W",
+    "visible": true,
+    "order": 1,
+    "description": "WIP",
+    "cover": "assets/photos/stockholm-in-bw/bw4.jpg",
+    "images": [
+      "assets/photos/stockholm-in-bw/bw4.jpg",
+      "assets/photos/stockholm-in-bw/bw5.jpg",
+      "assets/photos/stockholm-in-bw/bw6.jpg",
+      "assets/photos/stockholm-in-bw/bw7.jpg",
+      "assets/photos/stockholm-in-bw/bw8.jpg",
+      "assets/photos/stockholm-in-bw/bw9.jpg",
+      "assets/photos/stockholm-in-bw/bw0.jpg",
+      "assets/photos/stockholm-in-bw/bw1.jpg",
+      "assets/photos/stockholm-in-bw/bw2.jpg",
+      "assets/photos/stockholm-in-bw/bw3.jpg"
+    ]
+  },
+  {
+    "slug": "stockholm-in-color",
+    "title": "Stockholm in Color",
+    "visible": true,
+    "order": 2,
+    "description": "WIP",
+    "cover": "assets/photos/stockholm-in-color/color4.jpg",
+    "images": [
+
+      "assets/photos/stockholm-in-color/color4.jpg",
+      "assets/photos/stockholm-in-color/color5.jpg",
+      "assets/photos/stockholm-in-color/color9.jpg",
+      "assets/photos/stockholm-in-color/color10.jpg",
+      "assets/photos/stockholm-in-color/color11.jpg",
+      "assets/photos/stockholm-in-color/color12.jpg",
+      "assets/photos/stockholm-in-color/color13.jpg",
+      "assets/photos/stockholm-in-color/color14.jpg",
+      "assets/photos/stockholm-in-color/color15.jpg",
+      "assets/photos/stockholm-in-color/color16.jpg",
+      "assets/photos/stockholm-in-color/color17.jpg",
+      "assets/photos/stockholm-in-color/color18.jpg",
+      "assets/photos/stockholm-in-color/color19.jpg",
+      "assets/photos/stockholm-in-color/color20.jpg",
+      "assets/photos/stockholm-in-color/color21.jpg",
+      "assets/photos/stockholm-in-color/color22.jpg",
+      "assets/photos/stockholm-in-color/color23.jpg",
+      "assets/photos/stockholm-in-color/color24.jpg",
+      "assets/photos/stockholm-in-color/color0.jpg",
+      "assets/photos/stockholm-in-color/color1.jpg",
+      "assets/photos/stockholm-in-color/color2.jpg",
+      "assets/photos/stockholm-in-color/color3.jpg",
+      "assets/photos/stockholm-in-color/color7.jpg",
+      "assets/photos/stockholm-in-color/color8.jpg"
+    ]
+  }
+]
