@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIELD_SYSTEM_300</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;800&family=Outfit:wght@900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --te-orange: #ff5c00;
+            --te-red: #ff0000;
+            --te-grey-bg: #d9d9d9; /* Slightly darker industrial grey */
+            --te-dark: #121212;
+            --te-grid: rgba(0, 0, 0, 0.07);
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--te-grey-bg);
+            background-image:
+                linear-gradient(var(--te-grid) 1px, transparent 1px),
+                linear-gradient(90deg, var(--te-grid) 1px, transparent 1px);
+            background-size: 25px 25px;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--te-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .device-frame {
+            background: #ebebeb;
+            border: 3px solid var(--te-dark);
+            padding: 50px;
+            display: flex;
+            gap: 60px;
+            box-shadow: 15px 15px 0px rgba(0,0,0,0.1);
+            position: relative;
+            /* Industrial "Screw" heads in corners */
+        }
+
+        .device-frame::before, .device-frame::after {
+            content: "+";
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            color: #aaa;
+        }
+        .device-frame::before { top: 10px; left: 10px; }
+        .device-frame::after { bottom: 10px; right: 10px; }
+
+        /* --- THE GAUGE --- */
+        .gauge-module {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .thermometer {
+            width: 35px;
+            height: 380px;
+            background: #cfcfcf; /* Recessed look */
+            border: 3px solid var(--te-dark);
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            overflow: hidden;
+        }
+
+        .mercury {
+            width: 100%;
+            height: 0%;
+            background: var(--te-orange);
+            transition: height 1.2s steps(15); /* Digital step feel */
+        }
+
+        .cap {
+            width: 65px;
+            height: 65px;
+            background: var(--te-dark);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        /* --- CONTENT --- */
+        .info-module {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+
+        .header-strip {
+            border-bottom: 3px solid var(--te-dark);
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            font-weight: 800;
+        }
+
+        .rec-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--te-red);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink { 50% { opacity: 0; } }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            background: var(--te-dark);
+            color: #fff;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+
+        .big-number {
+            font-size: 11rem;
+            font-weight: 800;
+            line-height: 0.85;
+            margin: 15px 0;
+            letter-spacing: -10px;
+            color: var(--te-dark);
+        }
+
+        .footer-meta {
+            margin-top: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .stat-box {
+            border: 2px solid var(--te-dark);
+            padding: 12px;
+            background: #fff;
+        }
+
+        .label {
+            font-size: 0.65rem;
+            display: block;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .value {
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+
+        @media (max-width: 650px) {
+            .device-frame { flex-direction: column; gap: 40px; padding: 30px; }
+            .big-number { font-size: 7rem; letter-spacing: -5px; }
+            .info-module { width: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="device-frame">
+        <div class="gauge-module">
+            <div class="thermometer">
+                <div class="mercury" id="mercury"></div>
+            </div>
+            <div class="cap" id="pct-label">00%</div>
+        </div>
+
+        <div class="info-module">
+            <div class="header-strip">
+                <span><span class="rec-dot"></span>LIVE_TRACKER</span>
+                <span>AXELERATOR_2026</span>
+            </div>
+
+            <span class="label">PRIMARY_OBJECTIVE</span>
+            <h1>LICENSE_300</h1>
+
+            <div class="big-number" id="count">000</div>
+
+            <div class="footer-meta">
+                <div class="stat-box">
+                    <span class="label">REMAIN_UNITS</span>
+                    <span class="value" id="rem-val">---</span>
+                </div>
+                <div class="stat-box" style="background: var(--te-orange); color: white; border: none;">
+                    <span class="label" style="color: white;">PROGRESS_LVL</span>
+                    <span class="value">STABLE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const sales = 187; // Updated your sales here
+        const goal = 300;
+        const pct = (sales / goal) * 100;
+
+        window.onload = () => {
+            setTimeout(() => {
+                document.getElementById('mercury').style.height = pct + '%';
+                document.getElementById('pct-label').innerText = Math.round(pct) + '%';
+                document.getElementById('rem-val').innerText = (goal - sales).toString().padStart(3, '0');
+            }, 400);
+
+            let current = 0;
+            const timer = setInterval(() => {
+                if (current >= sales) {
+                    clearInterval(timer);
+                    updateDisplay(sales);
+                } else {
+                    current += Math.ceil(sales / 25);
+                    if (current > sales) current = sales;
+                    updateDisplay(current);
+                }
+            }, 40);
+        };
+
+        function updateDisplay(val) {
+            document.getElementById('count').innerText = val.toString().padStart(3, '0');
+        }
+    </script>
+</body>
+</html>
