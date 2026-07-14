@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "rows": [
+    {
+      "layout": "feature",
+      "images": [
+        {
+          "file": "color10.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "color20.jpg",
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "file": "color21.jpg",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "layout": "solo-right",
+      "images": [
+        {
+          "file": "color12.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "color13.jpg",
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "file": "color11.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "feature",
+      "images": [
+        {
+          "file": "color18.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "color23.jpg",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "file": "color14.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "solo-left",
+      "images": [
+        {
+          "file": "color1.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "color15.jpg",
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "file": "color16.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "solo-right",
+      "images": [
+        {
+          "file": "color17.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "triptych",
+      "images": [
+        {
+          "file": "color22.jpg",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "file": "color24.jpg",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "file": "color19.jpg",
+          "width": 1440,
+          "height": 961
+        }
+      ]
+    },
+    {
+      "layout": "feature",
+      "images": [
+        {
+          "file": "color9.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "color3.jpg",
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "file": "color2.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "solo-left",
+      "images": [
+        {
+          "file": "color5.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "color4.jpg",
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "file": "color8.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "solo-right",
+      "images": [
+        {
+          "file": "color6.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "color7.jpg",
+          "width": 1440,
+          "height": 960
+        },
+        {
+          "file": "color0.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "feature",
+      "images": [
+        {
+          "file": "bw6.jpg",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "bw4.jpg",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "file": "bw5.jpg",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "layout": "solo-left",
+      "images": [
+        {
+          "file": "bw1.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "bw2.jpg",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "file": "bw3.jpg",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "layout": "feature",
+      "images": [
+        {
+          "file": "bw7.jpg",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "layout": "pair",
+      "images": [
+        {
+          "file": "bw8.jpg",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "file": "bw9.jpg",
+          "width": 1920,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "layout": "solo-right",
+      "images": [
+        {
+          "file": "bw0.jpg",
+          "width": 1440,
+          "height": 960
+        }
+      ]
+    }
+  ]
+}

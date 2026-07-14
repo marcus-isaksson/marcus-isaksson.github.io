@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Analog photography by Marcus Isaksson.">
+    <meta name="theme-color" content="#f1f0eb">
+    <title>marcusisaksson — analog photography</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="assets/photos/color14.jpg" fetchpriority="high">
+    <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to photographs</a>
+
+    <section class="cover" id="cover" aria-label="Portfolio cover">
+      <a class="cover__link" href="#work" data-enter>
+        <img
+          class="cover__image"
+          src="assets/photos/color14.jpg"
+          width="1440"
+          height="960"
+          alt=""
+          fetchpriority="high"
+        >
+        <span class="cover__name">marcusisaksson</span>
+        <span class="sr-only">Enter the photography portfolio</span>
+      </a>
+    </section>
+
+    <main class="portfolio" id="work" tabindex="-1">
+      <header class="site-header">
+        <a class="identity" href="#cover" data-exit>marcusisaksson</a>
+        <nav class="contact-links" aria-label="Contact">
+          <a href="https://www.instagram.com/marcusisaksson_/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="mailto:macke.isaksson@gmail.com">Email</a>
+        </nav>
+      </header>
+
+      <div class="gallery" aria-label="Photographs"></div>
+
+      <footer class="site-footer">
+        <a href="#cover" data-exit>marcusisaksson</a>
+        <nav aria-label="Contact footer">
+          <a href="https://www.instagram.com/marcusisaksson_/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="mailto:macke.isaksson@gmail.com">Email</a>
+        </nav>
+      </footer>
+    </main>
+
+    <dialog class="viewer" aria-label="Photograph viewer">
+      <div class="viewer__bar">
+        <span class="viewer__count" aria-live="polite">01 / 35</span>
+        <button class="viewer__close" type="button" aria-label="Close photograph">Close</button>
+      </div>
+      <div class="viewer__stage">
+        <img class="viewer__image" src="" alt="">
+      </div>
+      <div class="viewer__controls">
+        <button type="button" data-previous aria-label="Previous photograph">Previous</button>
+        <button type="button" data-next aria-label="Next photograph">Next</button>
+      </div>
+    </dialog>
+  </body>
+</html>
