@@ -151,7 +151,7 @@ function createPhoto(image, index) {
   const thumbnail = document.createElement('img');
 
   link.className = 'photo';
-  link.href = `photos/${image.file}`;
+  link.href = `assets/photos/${image.file}`;
 
   thumbnail.src = `assets/photos/${image.file}`;
   thumbnail.width = image.width;
