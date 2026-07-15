@@ -12,6 +12,7 @@
   --line: rgba(21, 21, 20, 0.18);
   --accent: #ff4f2e;
   --page-gutter: clamp(0.75rem, 2.25vw, 2.25rem);
+  --gallery-max-width: 96rem;
   --section-space: clamp(4rem, 9vw, 9.5rem);
   --font-display: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
   --font-handle: "Averia Serif Libre", Georgia, serif;
@@ -244,6 +245,9 @@ button {
 }
 
 .gallery {
+  width: 100%;
+  max-width: var(--gallery-max-width);
+  margin-inline: auto;
   padding: clamp(2.5rem, 6.5vw, 7rem) var(--page-gutter) var(--section-space);
 }
 
