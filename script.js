@@ -71,8 +71,8 @@ function renderViewer(index) {
   if (!photos.length) return;
 
   activePhoto = (index + photos.length) % photos.length;
-  const link = photos[activePhoto];
-  viewerImage.src = link.href;
+  const thumbnail = photos[activePhoto].querySelector('img');
+  viewerImage.src = thumbnail.currentSrc || thumbnail.src;
   viewerImage.alt = '';
   viewerCount.textContent = `${padNumber(activePhoto + 1)} / ${padNumber(photos.length)}`;
 }
@@ -147,11 +147,12 @@ function validateGallery(manifest) {
 }
 
 function createPhoto(image, index) {
-  const link = document.createElement('a');
+  const button = document.createElement('button');
   const thumbnail = document.createElement('img');
 
-  link.className = 'photo';
-  link.href = `assets/photos/${image.file}`;
+  button.className = 'photo';
+  button.type = 'button';
+  button.setAttribute('aria-label', `Open photograph ${index + 1}`);
 
   thumbnail.src = `assets/photos/${image.file}`;
   thumbnail.width = image.width;
@@ -162,8 +163,8 @@ function createPhoto(image, index) {
   if (index === 0) thumbnail.fetchPriority = 'high';
   else thumbnail.loading = 'lazy';
 
-  link.append(thumbnail);
-  return link;
+  button.append(thumbnail);
+  return button;
 }
 
 function renderGallery(manifest) {
@@ -187,10 +188,7 @@ function renderGallery(manifest) {
   viewerCount.textContent = `01 / ${padNumber(photos.length)}`;
 
   photos.forEach((photo, index) => {
-    photo.addEventListener('click', (event) => {
-      event.preventDefault();
-      openViewer(index);
-    });
+    photo.addEventListener('click', () => openViewer(index));
   });
 }
 

@@ -304,8 +304,12 @@ button {
 .photo {
   position: relative;
   display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
   overflow: hidden;
   background: #d9d8d2;
+  color: inherit;
   cursor: zoom-in;
   text-decoration: none;
 }
